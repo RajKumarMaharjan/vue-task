@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="uppercase text-center mt-8 font-semibold underline">Ordered by {{ order }}</p>
+    <p class="uppercase text-center text-gray-600 mt-8 mb-2 font-semibold underline">Ordered by {{ order }}</p>
     <ul className="w-[80%] mx-auto" >
       <li v-for="job in orderJobs" :key="job.id" class="bg-gray-100 mb-4 p-8 rounded-lg">
         <h2 className="text-xl text-gray-600 font-semibold pb-2 capitalize" >{{ job.title }} in {{ job.location }}</h2>

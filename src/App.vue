@@ -20,7 +20,9 @@
       Order By Location
     </button>
   </div>
+   <div class="text-3xl">
     <JobList :jobs="jobs" :order="order" />
+   </div>
 </template>
 
 <script lang="ts">
@@ -28,18 +30,13 @@ import { defineComponent, ref } from "vue";
 import JobList from "./components/JobsList.vue";
 import Job from "./types/Job";
 import OrderTerm from "./types/OrderTerm";
+import JobData from './data/jobData.json'
 
 export default defineComponent({
   name: "App",
   components: { JobList },
   setup() {
-    const jobs = ref<Job[]>([
-      { title: "farm worker", location: "Terai", salary: 20000, id: "1" },
-      { title: "deliveryman", location: "Kathmandu", salary: 26000, id: "2" },
-      { title: "cook", location: "Lalitpur", salary: 50000, id: "3" },
-      { title: "waiter", location: "Lalitour", salary: 15000, id: "4" },
-      { title: "gard", location: "Bhaktapur", salary: 18000, id: "5" },
-    ]);
+    const jobs = ref<Job[]>(JobData);
 
     const order = ref<OrderTerm>("title");
 

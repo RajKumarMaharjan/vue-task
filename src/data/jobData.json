@@ -1,0 +1,32 @@
+[
+    {
+        "title": "farm worker",
+        "location": "Terai",
+        "salary": 20000,
+        "id": "1"
+    },
+    {
+        "title": "deliveryman",
+        "location": "Kathmandu",
+        "salary": 26000,
+        "id": "2"
+    },
+    {
+        "title": "cook",
+        "location": "Lalitpur",
+        "salary": 50000,
+        "id": "3"
+    },
+    {
+        "title": "waiter",
+        "location": "Lalitpur",
+        "salary": 15000,
+        "id": "4"
+    },
+    {
+        "title": "gard",
+        "location": "Bhaktapur",
+        "salary": 18000,
+        "id": "5"
+    }
+]
